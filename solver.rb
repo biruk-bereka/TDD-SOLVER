@@ -7,6 +7,10 @@ class Solver
     (1..num).reduce(:*)
   end
 
+  def reverse(string)
+    string.chars.reverse.join
+  end
+
   def fizzbuzz(num)
     if (num % 3).zero? && (num % 5).zero?
       'fizzbuzz'
