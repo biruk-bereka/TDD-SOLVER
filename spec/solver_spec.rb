@@ -33,4 +33,14 @@ describe Solver do
       end
     end
   end
+
+  describe '#reverse' do
+    context 'it should return a reverse string' do
+      it 'reverse' do
+        expect(@solver.reverse('hello')).to eq('olleh')
+        expect(@solver.reverse('james')).to eq('semaj')
+        expect(@solver.reverse('biruk')).to eq('kurib')
+      end
+    end
+  end
 end
