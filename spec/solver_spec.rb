@@ -23,4 +23,14 @@ describe Solver do
       expect { @solver.factorial(-10) }.to raise_error(ArgumentError)
     end
   end
+  describe '#fizzbuzz' do
+    context 'if fizzbuzz' do
+      it 'fizzbuzz' do
+        expect(@solver.fizzbuzz(15)).to eq('fizzbuzz')
+        expect(@solver.fizzbuzz(27)).to eq('fizz')
+        expect(@solver.fizzbuzz(25)).to eq('buzz')
+        expect(@solver.fizzbuzz(4)).to eq(4.to_s)
+      end
+    end
+  end
 end
